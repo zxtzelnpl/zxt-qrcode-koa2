@@ -1,0 +1,33 @@
+{
+  "name": "zxt-qrcode-koa2",
+  "version": "1.0.0",
+  "description": "qrcode",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "www.zxt.com"
+  },
+  "keywords": [
+    "qrcode"
+  ],
+  "author": "zxt",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-better-serve": "^2.0.7",
+    "koa-body": "^2.5.0",
+    "koa-favicon": "^2.0.0",
+    "koa-router": "^7.3.0",
+    "moment": "^2.20.1",
+    "mysql": "^2.15.0",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.16"
+  }
+}

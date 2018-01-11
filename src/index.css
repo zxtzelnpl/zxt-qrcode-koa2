@@ -1,0 +1,74 @@
+html,
+body {
+  background: #ddd;
+}
+input {
+  border: none;
+  outline: none;
+}
+html,
+body,
+h4,
+input {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-width: 300px;
+  background: #fff;
+}
+header{
+  display:flex;
+}
+.crab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  height: 150px;
+}
+.crab h4 {
+  height: 30px;
+}
+.crab span {
+  width: 300px;
+  height: 30px;
+}
+.crab input {
+  border: 1px solid black;
+  width: 300px;
+  height: 30px;
+}
+.crab button {
+  width: 300px;
+  height: 30px;
+}
+.qrcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  height: 150px;
+}
+.qrcode h4 {
+  height: 30px;
+}
+.qrcode span {
+  width: 300px;
+  height: 30px;
+}
+.qrcode input {
+  border: 1px solid black;
+  width: 300px;
+  height: 30px;
+}
+.qrcode button {
+  width: 300px;
+  height: 30px;
+}
