@@ -84,6 +84,7 @@ if (pre === '0') {
 }
 
 url = pres[pre] + pages[page]
+console.log(url)
 
 qrcodes.forEach(function (qrcode, index) {
   Repromise.push(WebPage.create())
@@ -100,9 +101,9 @@ qrcodes.forEach(function (qrcode, index) {
           $("#txtProductName").val(qrcode.name)
           $("#txtProductPrice").val(qrcode.price)
           $("#txtChannel").val(channel)
-          // $("#btnAdd").click()
+          $("#btnAdd").click()
         }, qrcode, channel)
-        Repromise[index].render('scanner/img' + index + '.jpg')
+        // Repromise[index].render('scanner/img' + index + '.jpg')
       }
     }, 5000 * (index + 1))
   })

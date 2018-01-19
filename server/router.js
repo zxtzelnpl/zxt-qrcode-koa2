@@ -56,7 +56,7 @@ router.get('/qrcode',async (ctx)=>{
   }
   else{
     let data = response.map(item=>{
-      if(page===0){
+      if(page==='0'){
         return {
           dir:item.ProductSummary,
           name:`${name}-${item.ProductSummary}-${item.ProductName}-${item.ProductPrice}.jpg`,
@@ -126,9 +126,9 @@ async function download(url, dir, filename){
   await request.head(url)
   return request(url).pipe(fs.createWriteStream('download/'+dir + "/" + filename));
 }
-function crab(arg){
+function crab(channel,pre,page){
   return new Promise((resolve,reject)=>{
-    const program = phantomjs.exec('./phantomjs/two.js', arg)
+    const program = phantomjs.exec('./phantomjs/two.js', channel,pre,page)
     program.stdout.pipe(process.stdout)
     program.stderr.pipe(process.stderr)
     program.on('exit', code => {
