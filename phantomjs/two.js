@@ -46,6 +46,48 @@ var qrcodes = [
     over: true
   }
 ];
+var qrcodes = [
+    {
+        name: '君银投顾',
+        price: '1000'
+    },
+    {
+        name: '君银投顾',
+        price: '3000'
+    },
+    {
+        name: '君银投顾',
+        price: '5000'
+    },
+    {
+        name: '君银投顾',
+        price: '6800'
+    },
+    {
+        name: '君银投顾',
+        price: '9800'
+    },
+    {
+        name: '君银投顾',
+        price: '10000'
+    },
+    {
+        name: '君银投顾',
+        price: '26800'
+    },
+
+    {
+        name: '君银投顾',
+        price: '36800'
+    },
+    {
+        name: '君银投顾',
+        price: '59800'
+    },
+    {
+        over: true
+    }
+];
 
 var pres = [
   'http://www.jyzqsh.com/',
