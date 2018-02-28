@@ -45,8 +45,9 @@ var qrcodes = [
   {
     over: true
   }
-]
-    , pres = [
+];
+
+var pres = [
   'http://www.jyzqsh.com/',
   'http://mp.jyzqwh.com/'
 ]
