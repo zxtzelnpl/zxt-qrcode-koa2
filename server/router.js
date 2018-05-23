@@ -28,8 +28,8 @@ router.get('/crab', async (ctx) => {
 })
 router.get('/qrcode',async (ctx)=>{
   let {channel,pre='1',page='0'}= ctx.query
-      , pres=['http://www.jyzqsh.com/','http://mp.jyzqwh.com/']
-      , names=['微信','支付宝']
+      , pres=['http://jyzqsh.com/','http://mp.jyzqwh.com/']
+      , names=['微信','支付宝',"支付宝"]
       , queryStr
       , response
       , web

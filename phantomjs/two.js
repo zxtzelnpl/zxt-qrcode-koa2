@@ -1,6 +1,6 @@
 'use strict'
 
-var qrcodes = [
+/*var qrcodes = [
   {
     name: '短线宝',
     price: '9800'
@@ -45,72 +45,101 @@ var qrcodes = [
   {
     over: true
   }
-];
+];*/
 var qrcodes = [
-    {
-        name: '君银投顾',
-        price: '1000'
-    },
-    {
-        name: '君银投顾',
-        price: '3000'
-    },
-    {
-        name: '君银投顾',
-        price: '5000'
-    },
-    {
-        name: '君银投顾',
-        price: '6800'
-    },
-    {
-        name: '君银投顾',
-        price: '9800'
-    },
-    {
-        name: '君银投顾',
-        price: '10000'
-    },
-    {
-        name: '君银投顾',
-        price: '26800'
-    },
+  {
+    name: '短线宝',
+    price: '9800'
+  },
+  {
+    name: '短线宝',
+    price: '3300'
+  },
+  {
+    name: '君银操盘',
+    price: '10800'
+  },
+  {
+    name: '君银操盘',
+    price: '26800'
+  },
+  {
+    name: '君银投顾',
+    price: '300'
+  },
+  {
+    name: '君银投顾',
+    price: '800'
+  },
+  {
+    name: '君银投顾',
+    price: '3000'
+  },
+  {
+    name: '君银投顾',
+    price: '1000'
+  },
+  {
+    name: '君银投顾',
+    price: '3500'
+  },
+  {
+    name: '君银投顾',
+    price: '5000'
+  },
+  {
+    name: '君银投顾',
+    price: '6800'
+  },
+  {
+    name: '君银投顾',
+    price: '9800'
+  },
+  {
+    name: '君银投顾',
+    price: '10000'
+  },
+  {
+    name: '君银投顾',
+    price: '26800'
+  },
 
-    {
-        name: '君银投顾',
-        price: '36800'
-    },
-    {
-        name: '君银投顾',
-        price: '59800'
-    },
-    {
-        over: true
-    }
+  {
+    name: '君银投顾',
+    price: '36800'
+  },
+  {
+    name: '君银投顾',
+    price: '59800'
+  },
+  {
+    over: true
+  }
 ];
 
 var pres = [
-  'http://www.jyzqsh.com/',
+  'http://jyzqsh.com/',
   'http://mp.jyzqwh.com/'
 ]
-    , pages = [
+  , pages = [
   'BackendMan/WeiXinQRCode/ProductsAdd.aspx',
-  'BackendMan/Alipay/ProductsAdd.aspx'
+  'BackendMan/Alipay/ProductsAdd.aspx',
+  'BackendMan/New_akx/Alipay/ProductsAdd.aspx'
 ]
-    , channel
-    , url
-    , pre = '1'
-    , page = '0'
-    , Repromise = []
-    , WebPage = require('webpage')
-    , system = require('system')
+  , channel
+  , url
+  , pre = '1'
+  , page = '0'
+  , Repromise = []
+  , WebPage = require('webpage')
+  , system = require('system')
 if (system.args.length === 1) {
   console.log('Try to pass some args when invoking this script!');
 } else {
   console.log(system.args)
   channel = system.args[1]
-  pre = system.args[2]||pre
-  page = system.args[3]||page
+  pre = system.args[2] || pre
+  page = system.args[3] || page
 
 }
 
@@ -118,7 +147,7 @@ if (pre === '0') {
   phantom.addCookie({
     'name': 'UserIDBackend', /* required property */
     'value': '1', /* required property */
-    'domain': 'www.jyzqsh.com',
+    'domain': 'jyzqsh.com',
     'path': '/', /* required property */
     // 'httponly' : true,
     // 'secure'   : false,
